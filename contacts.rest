@@ -3,3 +3,30 @@ GET https://my-cse341.onrender.com/contacts
 
 ### Get single contact by id
 GET https://my-cse341.onrender.com/contacts/6a4e7e16c6c7f05c4910f0a1
+
+### Create new contact
+POST https://my-cse341.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Pedro",
+  "lastName": "Sánchez",
+  "email": "pedro.sanchez@example.com",
+  "favoriteColor": "amarillo",
+  "birthday": "1993-07-30"
+}
+
+### Update contact
+PUT https://my-cse341.onrender.com/contacts/6a4e7e16c6c7f05c4910f0a1
+Content-Type: application/json
+
+{
+  "firstName": "Juan Carlos",
+  "lastName": "Pérez",
+  "email": "juan.carlos.perez@example.com",
+  "favoriteColor": "azul oscuro",
+  "birthday": "1990-05-15"
+}
+
+### Delete contact
+DELETE https://my-cse341.onrender.com/contacts/6a4e7e16c6c7f05c4910f0a1
